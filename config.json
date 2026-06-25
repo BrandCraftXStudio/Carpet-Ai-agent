@@ -1,0 +1,55 @@
+{
+  "app": {
+    "name": "Carpet Match AI",
+    "version": "1.0.0",
+    "top_n_results": 5,
+    "similarity_threshold": 80
+  },
+  "color": {
+    "num_dominant_colors": 6,
+    "color_quality": 5
+  },
+  "database": {
+    "db_path": "database/catalog.db",
+    "root_folder": "database"
+  },
+  "catalog": {
+    "sections": [
+      {
+        "id": "carpets",
+        "label": "Carpets",
+        "icon": "🪑",
+        "folder": "database/carpets",
+        "types": [
+          {
+            "id": "modern",
+            "label": "Modern",
+            "folder": "database/carpets/modern"
+          },
+          {
+            "id": "classic",
+            "label": "Classic",
+            "folder": "database/carpets/classic"
+          },
+          {
+            "id": "new_classic",
+            "label": "New Classic",
+            "folder": "database/carpets/new_classic"
+          }
+        ]
+      },
+      {
+        "id": "rolls",
+        "label": "Rolls",
+        "icon": "🧻",
+        "folder": "database/rolls",
+        "types": []
+      }
+    ]
+  },
+  "ui": {
+    "show_color_swatches": true,
+    "show_match_score": true,
+    "results_per_row": 3
+  }
+}
